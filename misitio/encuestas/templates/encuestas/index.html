@@ -1,0 +1,17 @@
+{% if listado %}
+
+    <ul>
+
+    {% for p in listado %}
+
+        <li><a href="/encuestas/{{ p.id }}/">{{ p.texto }}</a></li>
+
+    {% endfor %}
+
+    </ul>
+
+{% else %}
+
+    <p>No hay preguntas.</p>
+
+{% endif %}
